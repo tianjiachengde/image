@@ -8,9 +8,11 @@
     "build-storybook": "build-storybook"
   },
   "private": false,
+//   项目入口
   "main": "dist/imageShoot-tjc.js",
   "dependencies": {
     "extract-text-webpack-plugin": "^3.0.2",
+    "image-screen-shoot-tjc": "^0.2.1",
     "vue": "^2.6.6",
     "vue-loader": "^15.7.0"
   },

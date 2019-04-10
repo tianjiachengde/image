@@ -1,4 +1,5 @@
 //webpack.config.js
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
@@ -29,8 +30,8 @@ module.exports = {
                 loader:'url-loader?limit=8192'
             },
             {
-                test: /\.css/,
-                loader: "css-loader"
+                test:/\.css$/,
+                use:['style-loader','css-loader']
             },
         ]
     }

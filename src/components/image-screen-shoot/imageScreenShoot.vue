@@ -367,51 +367,6 @@
     };
 </script>
 
-<style scoped>
-    .border {
-        cursor: move;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-    }
-    .absolute {
-        position: absolute;
-    }
-    .function-menu {
-        display: flex;
-        justify-content: space-around;
-        font-size: 20px;
-        min-width: 60px;
-    }
-    .c-icon {
-        font-size: 20px;
-        color: #eb2f96;
-    }
-    .r-icon {
-        color: #52c41a;
-    }
-    .border-point {
-        position: absolute;
-        background: black;
-        width: 5px;
-        height: 5px;
-    }
-    .north-west {
-        cursor: nw-resize;
-    }
-    .north-east {
-        cursor: ne-resize;
-    }
-    .south-west {
-        cursor: sw-resize;
-    }
-    .south-east {
-        cursor: se-resize;
-    }
-    .border-point-response-area {
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+<style lang="css" src='./index.css' scoped>
+
 </style>

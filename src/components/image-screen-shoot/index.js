@@ -1,7 +1,21 @@
 import imageComponent from  './imageScreenShoot.vue';
 
-export default {
+const image =  {
     install(Vue){
-        Vue.components('imageScreenShoot',imageComponent);
+        console.log('install vue is :')
+        console.log(Vue);
+        Vue.component('imageScreenShoot',imageComponent);
     }
+
+};
+
+if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.use(imageComponent);
 }
+
+
+
+export default {
+    image,
+    imageComponent
+};
