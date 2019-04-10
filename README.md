@@ -13,7 +13,7 @@
 ```
 ##example
 ```angular2
-<image-component :width='100' :height='100' url="xxx" @image-info='handleImageInfo'/>
+<image-component :width='100' :height='100' :url="xxx" @image-info='handleImageInfo'/>
 ```
 
 
