@@ -3,8 +3,9 @@ node_modules
 /dist
 src/stories
 .storybook
-src/App.vue
+/src/App.vue
 src/main.js
+
 # local env files
 .env.local
 .env.*.local
