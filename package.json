@@ -1,17 +1,29 @@
 {
-  "name": "image-screen-shoot",
+  "name": "image-screen-shoot-tjc",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
+  "private": false,
+  "main": "dist/imageShoot-tjc.js",
   "dependencies": {
+    "image-screen-shoot-tjc": "^0.1.0",
     "vue": "^2.6.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/vue": "^5.0.6",
     "@vue/cli-service": "^3.5.0",
-    "vue-template-compiler": "^2.5.21"
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack-cli": "^3.3.0"
   },
   "postcss": {
     "plugins": {
