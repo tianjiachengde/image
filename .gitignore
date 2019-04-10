@@ -5,6 +5,8 @@ stories
 public
 .storybook
 src/App.vue
+src/main.js
+src/assets
 
 # local env files
 .env.local
