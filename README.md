@@ -1,5 +1,8 @@
 # image-screen-shoot
-
+##install
+```angular2
+    yarn add image-screen-shoot-tjc
+```
 ##import
 ```angular2
    import templateName from 'image-screen-shoot-tjc'
