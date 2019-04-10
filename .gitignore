@@ -4,7 +4,7 @@ node_modules
 stories
 public
 .storybook
-!src/components
+src/App.vue
 
 # local env files
 .env.local
