@@ -1,20 +1,21 @@
 {
   "name": "image-screen-shoot-tjc",
   "version": "0.2.1",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "webpack",
+    "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test:unit": "vue-cli-service test:unit --config jest.config.js"
   },
-  "private": false,
-//   项目入口
   "main": "dist/imageShoot-tjc.js",
   "dependencies": {
     "extract-text-webpack-plugin": "^3.0.2",
     "image-screen-shoot-tjc": "^0.2.1",
     "vue": "^2.6.6",
-    "vue-loader": "^15.7.0"
+    "vue-loader": "^15.7.0",
+    "vue-test-utils": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -22,10 +23,15 @@
     "@storybook/addon-links": "^5.0.6",
     "@storybook/addons": "^5.0.6",
     "@storybook/vue": "^5.0.6",
+    "@vue/cli-plugin-unit-jest": "^3.5.3",
     "@vue/cli-service": "^3.5.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
     "babel-preset-vue": "^2.0.2",
     "css-loader": "^2.1.1",
+    "expect": "^24.7.1",
+    "jest": "^24.7.1",
     "style-loader": "^0.23.1",
     "vue-template-compiler": "^2.5.21",
     "webpack-cli": "^3.3.0"
