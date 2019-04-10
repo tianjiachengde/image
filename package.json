@@ -1,6 +1,6 @@
 {
   "name": "image-screen-shoot-tjc",
-  "version": "0.1.0",
+  "version": "0.1.9",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "webpack",
@@ -10,7 +10,8 @@
   "private": false,
   "main": "dist/imageShoot-tjc.js",
   "dependencies": {
-    "image-screen-shoot-tjc": "^0.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "image-screen-shoot-tjc": "^0.1.7",
     "vue": "^2.6.6"
   },
   "devDependencies": {
