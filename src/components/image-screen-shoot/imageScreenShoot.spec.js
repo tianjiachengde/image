@@ -47,13 +47,13 @@ describe('counter',() => {
     it('init data when trigger cancel function',() => {
         //given
         const wrapper = mount(imageCom,{propsData:propsData});
-        const cancelMethod = () => 'a';
+        const cancelMethod = jest.fn();
         wrapper.setMethods({cancel: cancelMethod});
         //when
         wrapper.setData({mouseEvenStatus:'up'});
         const root = wrapper.find('div .function-menu img');
         root.trigger('click');
         //then
-        expect(cancelMethod.call()).toEqual("a");
+        expect(cancelMethod).toHaveBeenCalled();
     })
 })
